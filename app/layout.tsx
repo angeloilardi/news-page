@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-off-white'>
+      <body className='bg-off-white max-w-5xl mx-auto'>
         <Navbar></Navbar>
         {children}</body>
     </html>
