@@ -68,7 +68,7 @@ export default function Home() {
             {midNews.map((item, index) => {
               return (
                 <>
-                  <h3 className="font-bold mt-4 text-xl text-off-white">
+                  <h3 className="font-bold mt-4 text-xl text-off-white hover:text-soft-orange cursor-pointer">
                     {item.title}
                   </h3>
                   <p className="text-grayish-blue mt-4 mb-3 text-[15px]">
@@ -89,7 +89,7 @@ export default function Home() {
                   <h1 className="text-4xl text-grayish-blue font-semibold md:row-start-2">
                     {item.number}
                   </h1>
-                  <h2 className="font-semibold text-lg md:row-start-3">
+                  <h2 className="font-semibold text-lg md:row-start-3 cursor-pointer hover:text-soft-red">
                     {item.title}
                   </h2>
                   <p className="text-dark-grayish-blue">{item.subtitle}</p>

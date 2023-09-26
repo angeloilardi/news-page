@@ -27,22 +27,22 @@ export default function DefaultNavbar() {
         <Navbar.Link active href="#">
           <p>Home</p>
         </Navbar.Link>
-        <Navbar.Link href="#" className="border-0">
+        <Navbar.Link href="#" className="border-0 hover:text-soft-orange">
           <p>About</p>
         </Navbar.Link>
-        <Navbar.Link href="#" className="border-0">
+        <Navbar.Link href="#" className="border-0 hover:text-soft-orange">
           Home
         </Navbar.Link>
-        <Navbar.Link href="#" className="border-0">
+        <Navbar.Link href="#" className="border-0 hover:text-soft-orange">
           New
         </Navbar.Link>
-        <Navbar.Link href="#" className="border-0">
+        <Navbar.Link href="#" className="border-0 hover:text-soft-orange">
           Popular
         </Navbar.Link>
-        <Navbar.Link href="#" className="border-0">
+        <Navbar.Link href="#" className="border-0 hover:text-soft-orange">
           Trending
         </Navbar.Link>
-        <Navbar.Link href="#" className="border-0">
+        <Navbar.Link href="#" className="border-0 hover:text-soft-orange">
           Categories
         </Navbar.Link>
       </Navbar.Collapse>
