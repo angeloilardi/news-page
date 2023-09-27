@@ -41,8 +41,8 @@ const bottomNews = [
 export default function Home() {
   return (
     <>
-      <div className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-fr">
-        <section className="flex flex-col md:col-span-2 p-4 md:grid bg-off-white md:auto-rows-min ">
+      <div className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-fr flex flex-col">
+        <section className="md:col-span-2 p-4 md:grid bg-off-white md:auto-rows-min ">
           <img
             src="./images/image-web-3-desktop.jpg"
             alt=""
@@ -51,7 +51,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold mt-5 text-black">
             The Bright Future of Web 3.0?
           </h1>
-          <div className="md:col-span-1">
+          <div>
             <p className="mt-5 text-sm text-dark-grayish-blue">
               We dive into the next evolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
@@ -80,7 +80,7 @@ export default function Home() {
             })}
           </div>
         </section>
-        <section className="flex flex-col gap-6 p-4 md:p-0 md:grid md:grid-cols-3 bg-white md:col-span-3">
+        <section className="flex flex-col gap-6 p-4 md:grid md:grid-cols-3 bg-white md:col-span-3">
           {bottomNews.map((item) => {
             return (
               <div className="flex my-6 h-[150px] md:col-span-1">
