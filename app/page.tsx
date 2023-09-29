@@ -41,14 +41,14 @@ const bottomNews = [
 export default function Home() {
   return (
     <>
-      <div className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-fr flex flex-col">
-        <section className="md:col-span-2 p-4 md:grid bg-off-white md:auto-rows-min ">
+      <div className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-min flex flex-col">
+        <section className="md:col-span-2 p-4 md:grid bg-off-white md:grid-cols-2 md:gap-6">
           <img
             src="./images/image-web-3-desktop.jpg"
             alt=""
             className="md:col-span-2"
           />
-          <h1 className="text-5xl font-bold mt-5 text-black">
+          <h1 className="text-5xl font-bold mt-5 text-black md:col-span-1">
             The Bright Future of Web 3.0?
           </h1>
           <div>
@@ -62,16 +62,16 @@ export default function Home() {
             </button>
           </div>
         </section>
-        <section className="flex flex-col p-4 bg-off-white">
+        <section className="flex flex-col p-4 bg-off-white md:auto-rows-max">
           <div className="bg-very-dark-blue p-4">
-            <h2 className="text-soft-orange font-semibold text-xl">New</h2>
+            <h2 className="text-soft-orange font-semibold text-2xl">New</h2>
             {midNews.map((item, index) => {
               return (
                 <>
                   <h3 className="font-bold mt-4 text-xl text-off-white hover:text-soft-orange cursor-pointer">
                     {item.title}
                   </h3>
-                  <p className="text-grayish-blue mt-4 mb-3 text-[15px]">
+                  <p className="text-grayish-blue mt-4 mb-4 text-[16px]">
                     {item.subtitle}
                   </p>
                   {index < midNews.length - 1 ? <hr /> : ""}
@@ -80,16 +80,16 @@ export default function Home() {
             })}
           </div>
         </section>
-        <section className="flex flex-col gap-6 p-4 md:grid md:grid-cols-3 bg-white md:col-span-3">
+        <section className="flex flex-col gap-6 p-4 md:grid md:grid-cols-3 bg-white md:col-span-3 md:auto-rows-fr">
           {bottomNews.map((item) => {
             return (
               <div className="flex my-6 h-[150px] md:col-span-1">
                 <img src={item.image} alt="" className="max-w-[30%] " />
-                <div className="flex flex-col ml-5 justify-between md:">
-                  <h1 className="text-4xl text-grayish-blue font-semibold md:row-start-2">
+                <div className="flex flex-col ml-5 justify-between">
+                  <h1 className="text-4xl text-grayish-blue font-semibold">
                     {item.number}
                   </h1>
-                  <h2 className="font-semibold text-lg md:row-start-3 cursor-pointer hover:text-soft-red">
+                  <h2 className="font-semibold text-lg cursor-pointer hover:text-soft-red text-black">
                     {item.title}
                   </h2>
                   <p className="text-dark-grayish-blue">{item.subtitle}</p>
