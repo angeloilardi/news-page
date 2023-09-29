@@ -43,7 +43,7 @@ export default function Home() {
     <>
       <div className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-min flex flex-col">
         <section className="md:col-span-2 p-4 md:grid bg-off-white md:grid-cols-2 md:gap-6">
-          <img
+          <Image
             src="./images/image-web-3-desktop.jpg"
             alt=""
             className="md:col-span-2"
@@ -84,7 +84,7 @@ export default function Home() {
           {bottomNews.map((item) => {
             return (
               <div className="flex my-6 h-[150px] md:col-span-1">
-                <img src={item.image} alt="" className="max-w-[30%] " />
+                <Image src={item.image} alt="" className="max-w-[30%] " />
                 <div className="flex flex-col ml-5 justify-between">
                   <h1 className="text-4xl text-grayish-blue font-semibold">
                     {item.number}
