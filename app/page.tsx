@@ -43,7 +43,7 @@ export default function Home() {
     <>
       <div className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-min flex flex-col">
         <section className="md:col-span-2 p-4 md:grid bg-off-white md:grid-cols-2 md:gap-6">
-          <Image
+          <img
             src="./images/image-web-3-desktop.jpg"
             alt=""
             className="md:col-span-2"
@@ -68,13 +68,15 @@ export default function Home() {
             {midNews.map((item, index) => {
               return (
                 <>
-                  <h3 className="font-bold mt-4 text-xl text-off-white hover:text-soft-orange cursor-pointer">
-                    {item.title}
-                  </h3>
-                  <p className="text-grayish-blue mt-4 mb-4 text-[16px]">
-                    {item.subtitle}
-                  </p>
-                  {index < midNews.length - 1 ? <hr /> : ""}
+                  <div key={index}>
+                    <h3 className="font-bold mt-4 text-xl text-off-white hover:text-soft-orange cursor-pointer">
+                      {item.title}
+                    </h3>
+                    <p className="text-grayish-blue mt-4 mb-4 text-[16px]">
+                      {item.subtitle}
+                    </p>
+                    {index < midNews.length - 1 ? <hr /> : ""}
+                  </div>
                 </>
               );
             })}
@@ -83,8 +85,10 @@ export default function Home() {
         <section className="flex flex-col gap-6 p-4 md:grid md:grid-cols-3 bg-white md:col-span-3 md:auto-rows-fr">
           {bottomNews.map((item) => {
             return (
-              <div className="flex my-6 h-[150px] md:col-span-1">
-                <Image src={item.image} alt="" className="max-w-[30%] " />
+              <div
+                className="flex my-6 h-[150px] md:col-span-1"
+                key={item.number}>
+                <img src={item.image} alt="" className="max-w-[30%] " />
                 <div className="flex flex-col ml-5 justify-between">
                   <h1 className="text-4xl text-grayish-blue font-semibold">
                     {item.number}
