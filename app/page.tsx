@@ -87,16 +87,19 @@ export default function Home() {
             return (
               <div
                 className="flex my-6 h-[150px] md:col-span-1"
-                key={item.number}>
+                key={item.number}
+              >
                 <img src={item.image} alt="" className="max-w-[30%] " />
-                <div className="flex flex-col ml-5 justify-between">
+                <div className="flex flex-col ml-5 justify-between content-end">
                   <h1 className="text-4xl text-grayish-blue font-semibold">
                     {item.number}
                   </h1>
-                  <h2 className="font-semibold text-lg cursor-pointer hover:text-soft-red text-black">
+                  <h2 className="font-semibold cursor-pointer  hover:text-soft-red text-black">
                     {item.title}
                   </h2>
-                  <p className="text-dark-grayish-blue">{item.subtitle}</p>
+                  <p className="text-dark-grayish-blue text-[15px]">
+                    {item.subtitle}
+                  </p>
                 </div>
               </div>
             );
