@@ -57,7 +57,7 @@ export default function Home() {
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <button className="mt-5 bg-soft-red text-off-white p-4 max-w-[50%] h-[50px] tracking-widest font-medium">
+            <button className="mt-5 bg-soft-red text-off-white p-4 w-[200px] h-[50px] tracking-widest font-medium">
               READ MORE
             </button>
           </div>
