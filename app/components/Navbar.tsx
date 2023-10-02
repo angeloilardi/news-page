@@ -25,7 +25,7 @@ export const navLinks = [
   },
 ];
 
-export default function Navbar2() {
+export default function Navbar() {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
