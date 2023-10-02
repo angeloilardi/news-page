@@ -69,9 +69,9 @@ export default function Home() {
               return (
                 <>
                   <div key={index}>
-                    <h3 className="font-bold mt-4 text-xl text-off-white hover:text-soft-orange cursor-pointer">
+                    <h2 className="font-bold mt-4 text-xl text-off-white hover:text-soft-orange cursor-pointer">
                       {item.title}
-                    </h3>
+                    </h2>
                     <p className="text-grayish-blue mt-4 mb-4 text-[16px]">
                       {item.subtitle}
                     </p>
