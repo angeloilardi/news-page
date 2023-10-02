@@ -41,7 +41,7 @@ const bottomNews = [
 export default function Home() {
   return (
     <>
-      <div className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-min flex flex-col">
+      <main className="md:grid md:grid-cols-3 md:grid-rows-2 max-w-5xl mx-auto md:auto-rows-min flex flex-col">
         <section className="md:col-span-2 p-4 md:grid bg-off-white md:grid-cols-2 md:gap-6">
           <img
             src="./images/image-web-3-desktop.jpg"
@@ -105,7 +105,7 @@ export default function Home() {
             );
           })}
         </section>
-      </div>
+      </main>
     </>
   );
 }
