@@ -64,7 +64,7 @@ export default function Home() {
         </section>
         <section className="flex flex-col p-4 bg-off-white md:auto-rows-max">
           <div className="bg-very-dark-blue p-4">
-            <h2 className="text-soft-orange font-semibold text-2xl">New</h2>
+            <h1 className="text-soft-orange font-semibold text-2xl">New</h1>
             {midNews.map((item, index) => {
               return (
                 <>
